@@ -3,6 +3,7 @@ body {
 }
 .navbar {
   padding: 0 40px;
+  z-index: 99;
 }
 .navbar-brand {
   display: flex;
@@ -17,6 +18,12 @@ body {
 .user-avatar {
   width: 54px;
   height: 54px;
+}
+.dropdown-menu {
+  display: none;
+}
+.user-avatar:hover .dropdown-menu {
+  display: block;
 }
 .nav-link {
   margin-left: 30px;
@@ -44,16 +51,101 @@ body {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-
+.form-inline {
+  position: relative;
+}
 .form-control {
   /* background-color: rgba(32, 40, 66, 0.1); */
   border-radius: 25px;
   border: none;
 }
 .form-control:focus {
-  -webkit-box-shadow: 0 7px 20px rgba(255, 255, 255, 0.5);
-  box-shadow: 0 7px 20px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 7px 20px rgba(255, 255, 255, 1);
+  box-shadow: 0 7px 20px rgba(255, 255, 255, 1);
 }
 .navbar-collapse {
   flex-grow: 0;
+}
+
+.nav-btn-search {
+  position: absolute;
+  right: 20px;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  outline: none !important;
+}
+.fas.fa-cat {
+  color: #c2509c;
+  font-size: 26px;
+  margin: 0 20px;
+}
+.nav-btn-search img {
+  display: block;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: translateY(1px);
+  -ms-transform: translateY(1px);
+  transform: translateY(1px);
+}
+.nav-profile {
+  position: relative;
+}
+.nav-profile-menu {
+  position: absolute;
+  top: 100px;
+  right: -10px;
+  width: 240px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.nav-profile:hover .nav-profile-menu {
+  opacity: 1;
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+.nav-profile-menu::before {
+  content: "";
+  position: absolute;
+  top: -46px;
+  right: 11px;
+  border-width: 28px 26px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+.nav-profile-menu a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+.nav-profile-menu--profileText {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.nav-profile-menu--profileEdit,
+.nav-profile-menu--profileText {
+  margin-top: 10px !important;
+}
+.nav-profile-menu--profileLogout {
+  margin-bottom: 10px !important;
+}
+.nav-profile-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.nav-profile-menu i {
+  color: #666;
+  margin: 0 10px 0 10px;
 }

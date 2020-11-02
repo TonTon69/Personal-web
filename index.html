@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello world</title>
-    <link rel="shortcut icon" type="image/png" href="./assets/image/logo.png">
+    <link rel="shortcut icon" type="image/png" href="assets/image/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Barlow+Semi+Condensed&family=Oswald&display=swap" 
         rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.13.1-web/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="app">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="/">
-                <img class="nav-logo" src="./assets/image/logo.png" alt="">
+                <img class="nav-logo" src="assets/image/logo.png" alt="">
                 <p>Minhhoang</p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
@@ -40,25 +41,39 @@
                     <a class="nav-link" href="/">LIÊN HỆ</a>
                 </li>
             </ul>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse">
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                    <button class="nav-btn-search" type="submit">
+                        <img src="assets/image/icon-search.svg" alt="">
+                    </button>
                 </form>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <div class="" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <img src="./assets/image/logo.png" class="user-avatar">
-                            </div>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/courses/create">Đăng khóa học</a>
-                                <a class="dropdown-item" href="/news/create">Đăng tin tức</a>
-                                <div class="dropdown-divider"></div>                              
-                            </div>
-                        </li>
-                    </ul>
-                </div>            
+                <div>
+                    <i class="fas fa-cat"></i>
+                </div>
+                <div class="nav-profile">
+                    <div class="nav-profile-icon">
+                        <img src="assets/image/logo.png" class="user-avatar">
+                    </div>
+                    <div class="nav-profile-menu">                       
+                        <a class="nav-profile-menu--profileText" href="">
+                            <i class="fas fa-user-alt"></i>
+                            Hồ sơ
+                        </a>
+                        <a class="nav-profile-menu--profileEdit" href="">
+                            <i class="fas fa-pen"></i>
+                            Chỉnh sửa hồ sơ
+                        </a>             
+                        <a class="nav-profile-menu--profileSetting" href="">
+                            <i class="fas fa-cog"></i>
+                            Cài đặt tài khoản
+                        </a>                  
+                        <a class="nav-profile-menu--profileLogout" href="">
+                            <i class="fas fa-power-off"></i>
+                            Đăng xuất
+                        </a>                          
+                    </div>
+                </div>               
             </div>
         </nav>
         <header class="main-heading">
