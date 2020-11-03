@@ -19,6 +19,7 @@ body {
   z-index: 99;
   background-color: transparent !important;
   transition: all 0.6s ease;
+  justify-content: space-between;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -327,4 +328,69 @@ nav.sticky .navbar-brand p {
   100% {
     transition: translate(0, -50%);
   }
+}
+.main-heading-admin {
+  position: absolute;
+  padding-right: 5vw;
+  bottom: 12px;
+  right: 0;
+}
+.main-heading-admin p {
+  font-size: 1.6em;
+  color: black;
+  margin: 0 0 4px 0;
+}
+.projects {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.projects h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 750;
+  font-size: 3.5em;
+  color: #c2509c;
+  background: linear-gradient(45deg, #c2509c, #9e6aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+
+  vertical-align: text-bottom;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+}
+.projects-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.projects-content a {
+  position: relative;
+  width: calc(100% - 2px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.projects-content a:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.projects-content p {
+  margin-bottom: 0;
+  position: absolute;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #d8279d;
+  font-size: 40px;
+  font-weight: 900;
+  z-index: 2;
 }
