@@ -374,6 +374,7 @@ nav.sticky .navbar-brand p {
 .projects-content a {
   position: relative;
   width: calc(100% - 2px);
+  height: 430px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -389,8 +390,35 @@ nav.sticky .navbar-brand p {
   position: absolute;
   text-transform: uppercase;
   color: transparent;
-  -webkit-text-stroke: 1.5px #d8279d;
-  font-size: 40px;
+  -webkit-text-stroke: 2px black;
+  font-size: 60px;
   font-weight: 900;
   z-index: 2;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.footer p {
+  margin: 0;
+  font-size: 18px;
+}
+.footer p span {
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+}
+.footer-icon {
+  font-size: 26px;
+}
+.footer-icon a {
+  margin-left: 16px;
+}
+.fab.fa-facebook {
+  color: #1196f5;
+}
+.fab.fa-github {
+  color: #333;
 }
