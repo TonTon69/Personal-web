@@ -64,12 +64,7 @@ nav.sticky .navbar-brand p {
   width: 54px;
   height: 54px;
 }
-.dropdown-menu {
-  display: none;
-}
-.user-avatar:hover .dropdown-menu {
-  display: block;
-}
+
 .nav-link {
   margin-left: 30px;
   color: #be2a8d !important;
@@ -150,6 +145,7 @@ nav.sticky .navbar-brand p {
 }
 .nav-profile {
   position: relative;
+  cursor: pointer;
 }
 .nav-profile-menu {
   position: absolute;
@@ -162,9 +158,11 @@ nav.sticky .navbar-brand p {
   border-radius: 5px;
 
   transition: all 0.4s ease;
+  visibility: hidden;
   opacity: 0;
 }
 .nav-profile:hover .nav-profile-menu {
+  visibility: visible;
   opacity: 1;
   cursor: pointer;
   transform: translateY(-20px);
@@ -409,6 +407,9 @@ nav.sticky .navbar-brand p {
   font-weight: 600;
   color: #666;
   cursor: pointer;
+}
+.footer p span:hover {
+  color: #c2509c;
 }
 .footer-icon {
   font-size: 26px;
