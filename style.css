@@ -1,14 +1,13 @@
-html,
-body {
-  font-family: Barlow, sans-serif;
-}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
 }
-
+html,
+body {
+  font-family: Barlow, sans-serif;
+}
 .navbar {
   position: fixed;
   width: 100%;
@@ -438,4 +437,32 @@ nav.sticky .navbar-brand p {
 }
 .fab.fa-github {
   color: #333;
+}
+.to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #c2509c, #9e6aff);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.to-top.active {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 80px;
+}
+.to-top i {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.to-top:hover .fas.fa-arrow-up {
+  font-size: 20px;
 }
