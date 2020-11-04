@@ -208,7 +208,7 @@ nav.sticky .navbar-brand p {
   padding-right: 5vw;
   height: 100vh;
   min-height: 700px;
-  background-image: url(assets/image/beach.jpg);
+  background-image: url(../image/beach.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ nav.sticky .navbar-brand p {
   position: absolute;
   width: 2.5em;
   height: 2.5em;
-  background-image: url(assets/image/triangle.svg);
+  background-image: url(../image/triangle.svg);
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 50px;
