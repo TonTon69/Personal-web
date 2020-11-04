@@ -296,7 +296,7 @@ nav.sticky .navbar-brand p {
   background-repeat: no-repeat;
   background-size: cover;
   bottom: 50px;
-  left: 50%;
+  left: 48.5%;
 
   animation: nudge 1.2s ease-in-out both infinite alternate;
 }
@@ -341,21 +341,35 @@ nav.sticky .navbar-brand p {
 .projects {
   padding-top: 50px;
   padding-bottom: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .projects h3 {
   font-family: "Barlow", sans-serif;
   font-weight: 750;
   font-size: 3.5em;
-  background: linear-gradient(45deg, #c2509c, #9e6aff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
-
   vertical-align: text-bottom;
   line-height: 1.5;
   margin-bottom: 50px;
+}
+.projects h3 b {
+  background: linear-gradient(-45deg, #c2509c, #9e6aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects h3 i {
+  display: block;
+  margin-top: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px #c2509c;
+}
+.projects h3 span {
+  color: transparent;
+  -webkit-text-stroke: 1px #c2509c;
 }
 .projects-content {
   display: grid;
@@ -397,6 +411,9 @@ nav.sticky .navbar-brand p {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .footer p {
   margin: 0;
