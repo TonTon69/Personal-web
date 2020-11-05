@@ -406,6 +406,7 @@ nav.sticky .navbar-brand p {
   z-index: 2;
 }
 .footer {
+  background-color: #f7f8fc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -465,4 +466,26 @@ nav.sticky .navbar-brand p {
 }
 .to-top:hover .fas.fa-arrow-up {
   font-size: 20px;
+}
+
+.memu-mobile {
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px solid rgba(0, 0, 0, 0.1) !important;
+  z-index: 2;
+  display: none;
+}
+.memu-mobile a {
+  color: #333;
+  text-decoration: none;
+}
+.memu-mobile img {
+  width: 20px;
+  height: 20px;
 }

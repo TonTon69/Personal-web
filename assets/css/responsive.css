@@ -105,6 +105,7 @@
   .main-heading-scroll {
     width: 1.5em;
     height: 1.5em;
+    bottom: 82px;
   }
   .main-heading-scroll {
     left: 46.5%;
@@ -128,6 +129,7 @@
   .footer {
     display: block;
     text-align: center;
+    margin-bottom: 50px;
   }
   .footer p {
     font-size: 1em;
@@ -137,6 +139,9 @@
   }
   .nav-upload i {
     margin: 0 10px;
+  }
+  .memu-mobile {
+    display: flex;
   }
 }
 @media (min-width: 414px) and (max-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -525,5 +530,12 @@
   }
   .nav-upload i {
     margin: 0 10px;
+  }
+  .memu-mobile img {
+    width: 18px;
+    height: 18px;
+  }
+  .memu-mobile p {
+    font-size: 14px;
   }
 }
