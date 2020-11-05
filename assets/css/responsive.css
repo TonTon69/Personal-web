@@ -83,6 +83,9 @@
   nav.sticky {
     padding: 0;
   }
+  .user-avatar {
+    margin-right: 8px;
+  }
   .form-control {
     width: 160px;
   }
@@ -167,7 +170,7 @@
     padding: 0;
   }
   .form-control {
-    width: 250px !important;
+    width: 256px !important;
   }
   .nav-btn-search {
     right: 7px;
@@ -320,7 +323,7 @@
     padding: 0;
   }
   .form-control {
-    width: 212px;
+    width: 216px;
   }
   .nav-btn-search {
     right: 7px;
@@ -398,7 +401,7 @@
     padding: 0;
   }
   .form-control {
-    width: 196px;
+    width: 202px;
   }
   .nav-btn-search {
     right: 7px;
@@ -477,7 +480,7 @@
     padding: 0;
   }
   .form-control {
-    width: 158px;
+    width: 162px;
   }
   .nav-btn-search {
     right: 7px;
