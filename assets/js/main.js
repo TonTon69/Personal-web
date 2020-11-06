@@ -1,17 +1,24 @@
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("nav");
-    var toTop = document.querySelector(".to-top");
-    
-    header.classList.toggle("sticky", window.scrollY > 0);
-    if(window.pageYOffset > 100) {
-        toTop.classList.add("show");
-    }
-    else{
-        toTop.classList.remove("show");
-    }
-})
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+$(document).ready(function() {
+    $(".menu-btn").click(function() {
+        $(".navbar-nav").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
+    })
 
+    $(window).scroll(function() {
+        if(this.scrollY > 20) {
+            $("nav").addClass("sticky");
+        }
+        else {
+            $("nav").removeClass("sticky");
+        }
+        if(this.scrollY > 500) {
+            $(".to-top").addClass("show");
+        }
+        else {
+            $(".to-top").removeClass("show");
+        }
+    });
+    $(".to-top").click(function(){
+        $("html").animate({scrollTop: 0})
+    });
+})
