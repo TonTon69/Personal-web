@@ -205,6 +205,12 @@ nav.sticky .navbar-brand p {
   color: #666;
   margin: 0 10px 0 10px;
 }
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
 
 .main-heading {
   position: relative;
@@ -458,8 +464,9 @@ nav.sticky .navbar-brand p {
   pointer-events: none;
   transition: all 0.4s ease;
   cursor: pointer;
+  z-index: 10;
 }
-.to-top.active {
+.to-top.show {
   opacity: 1;
   pointer-events: auto;
   bottom: 80px;
