@@ -364,11 +364,11 @@ nav.sticky .navbar-brand p {
 
 /* footer  */
 .footer {
-  background-color: #f7f8fc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
+  background-color: #f7f8fc;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -439,9 +439,8 @@ nav.sticky .navbar-brand p {
   position: fixed;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 1px solid rgba(0, 0, 0, 0.1) !important;
-  z-index: 2;
   display: none;
+  z-index: 99;
 }
 .memu-mobile a {
   color: #333;
