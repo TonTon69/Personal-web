@@ -425,9 +425,6 @@ nav.sticky .navbar-brand p {
   color: #fff;
   transition: all 0.2s ease;
 }
-.to-top:hover .fas.fa-arrow-up {
-  font-size: 20px;
-}
 
 /* menu tablet & moblie */
 .memu-mobile {
