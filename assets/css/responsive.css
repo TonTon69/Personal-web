@@ -69,20 +69,8 @@
     margin: 0;
     padding: 0;
   }
-
-  .main-heading-text h1 {
-    font-size: 2em;
-  }
-  .main-heading-text h2 {
-    font-size: 5em;
-  }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1.5em;
-  }
-
-  .main-heading-text--description__line2 span {
-    left: 294px;
+  .main-heading-text--2 {
+    font-size: 4.5em;
   }
   .projects {
     padding-top: 40px;
@@ -191,16 +179,16 @@
   .nav-btn-search {
     right: 7px;
   }
-
-  .main-heading-text h1 {
-    font-size: 1.6em;
+  .main-heading {
+    background-image: url(../image/banner1.jpg);
   }
-  .main-heading-text h2 {
-    font-size: 3em;
+  .main-heading-text--1,
+  .main-heading-text--3 {
+    font-size: 1.2em;
   }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1em;
+  .main-heading-text--2 {
+    font-size: 2em;
+    margin-top: -8px;
   }
   .main-heading-scroll {
     width: 1.5em;
@@ -300,22 +288,17 @@
   .nav-btn-search {
     right: 7px;
   }
-
-  .main-heading-text h1 {
-    font-size: 1.6em;
+  .main-heading-text--1,
+  .main-heading-text--3 {
+    font-size: 1.2em;
   }
-  .main-heading-text h2 {
-    font-size: 3em;
-  }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1em;
+  .main-heading-text--2 {
+    font-size: 2.5em;
+    margin-top: -8px;
   }
   .main-heading-scroll {
     width: 1.5em;
     height: 1.5em;
-  }
-  .main-heading-scroll {
     left: 46.5%;
   }
   .projects {
@@ -370,22 +353,17 @@
   .nav-btn-search {
     right: 7px;
   }
-
-  .main-heading-text h1 {
-    font-size: 1.6em;
+  .main-heading-text--1,
+  .main-heading-text--3 {
+    font-size: 1.2em;
   }
-  .main-heading-text h2 {
-    font-size: 3em;
-  }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1em;
+  .main-heading-text---2 {
+    font-size: 2.5em;
+    margin-top: -8px;
   }
   .main-heading-scroll {
     width: 1.5em;
     height: 1.5em;
-  }
-  .main-heading-scroll {
     left: 46.5%;
   }
   .projects {
@@ -446,22 +424,20 @@
   .nav-btn-search {
     right: 7px;
   }
-
-  .main-heading-text h1 {
-    font-size: 1.6em;
+  .nav-upload i {
+    margin: 0 10px;
   }
-  .main-heading-text h2 {
-    font-size: 3em;
+  .main-heading-text--1,
+  .main-heading-text--3 {
+    font-size: 1.2em;
   }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1em;
+  .main-heading-text--2 {
+    font-size: 2.5em;
+    margin-top: -8px;
   }
   .main-heading-scroll {
     width: 1.5em;
     height: 1.5em;
-  }
-  .main-heading-scroll {
     left: 46.5%;
   }
   .projects {
@@ -489,9 +465,6 @@
   }
   .footer-icon {
     margin-top: 6px;
-  }
-  .nav-upload i {
-    margin: 0 10px;
   }
   .about-title {
     font-size: 2em !important;
@@ -522,22 +495,18 @@
   .nav-btn-search {
     right: 7px;
   }
-
-  .main-heading-text h1 {
-    font-size: 1.6em;
+  .main-heading-text--1,
+  .main-heading-text--3 {
+    font-size: 1.2em;
   }
-  .main-heading-text h2 {
-    font-size: 3em;
-  }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1em;
+  .main-heading-text--2 {
+    font-size: 2.5em;
+    margin-top: -8px;
+  }ont-size: 1em;
   }
   .main-heading-scroll {
     width: 1.5em;
     height: 1.5em;
-  }
-  .main-heading-scroll {
     left: 46.5%;
   }
   .projects {
@@ -590,28 +559,26 @@
   nav.sticky {
     padding: 0;
   }
+  .nav-upload i {
+    margin: 0 10px;
+  }
   .form-control {
     width: 132px;
   }
   .nav-btn-search {
     right: 7px;
   }
-
-  .main-heading-text h1 {
-    font-size: 1.6em;
+  .main-heading-text--1,
+  .main-heading-text--3 {
+    font-size: 1.2em;
   }
-  .main-heading-text h2 {
-    font-size: 3em;
-  }
-  .main-heading-text--description,
-  .main-heading-admin p {
-    font-size: 1em;
+  .main-heading-text--2 {
+    font-size: 2.5em;
+    margin-top: -8px;
   }
   .main-heading-scroll {
     width: 1.5em;
     height: 1.5em;
-  }
-  .main-heading-scroll {
     left: 46.5%;
   }
   .projects {
@@ -639,9 +606,6 @@
   }
   .footer-icon {
     margin-top: 6px;
-  }
-  .nav-upload i {
-    margin: 0 10px;
   }
   .memu-mobile img {
     width: 18px;
