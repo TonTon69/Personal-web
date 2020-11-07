@@ -233,6 +233,8 @@ nav.sticky .navbar-brand p {
 .main-heading-text--1 {
   font-size: 1.8em;
   font-weight: 500;
+  opacity: 0;
+  animation: slideFromLeftTo 1s forwards;
 }
 .main-heading-text--2 {
   font-size: 6em;
@@ -241,10 +243,26 @@ nav.sticky .navbar-brand p {
   margin-top: -18px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  opacity: 0;
+  animation: slideFromLeftTo 1s forwards;
+  animation-delay: 0.3s;
 }
 .main-heading-text--3 {
   font-size: 2em;
   font-weight: 550;
+  opacity: 0;
+  animation: slideFromLeftTo 1s forwards;
+  animation-delay: 0.6s;
+}
+@-webkit-keyframes slideFromLeftTo {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 .main-heading-text--3 span {
   background: linear-gradient(45deg, #c2509c, #9e6aff);
@@ -346,6 +364,31 @@ nav.sticky .navbar-brand p {
   text-align: center;
   justify-content: center;
   overflow: hidden;
+}
+.project-blog {
+  opacity: 0;
+  animation: slideFromBottomUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+.project-shopee {
+  opacity: 0;
+  animation: slideFromBottomUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.project-muzli {
+  opacity: 0;
+  animation: slideFromBottomUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+@-webkit-keyframes slideFromBottomUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 .projects-content a:hover img {
   -webkit-transform: scale(1.2);
