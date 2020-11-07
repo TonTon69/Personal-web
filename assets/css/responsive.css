@@ -246,10 +246,11 @@
     margin-top: 40px;
   }
   .about-title {
-    font-size: 2em;
+    font-size: 2em !important;
   }
   .about .about-title::before {
     bottom: -7px;
+    width: 142px;
   }
   .about .about-title::after {
     bottom: -17px;
@@ -613,9 +614,6 @@
   }
   .memu-mobile p {
     font-size: 14px;
-  }
-  .about-title {
-    font-size: 2em !important;
   }
   .about .about-title::before {
     bottom: -7px;
