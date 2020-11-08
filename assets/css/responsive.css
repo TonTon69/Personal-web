@@ -81,9 +81,6 @@
   .projects-content a {
     height: calc(100% - 2px);
   }
-  .main-heading-scroll {
-    left: 47.5%;
-  }
   .about .about-content .left,
   .about .about-content .right {
     width: 100%;
@@ -182,14 +179,6 @@
   .main-heading-text--2 {
     font-size: 2em;
     margin-top: -6px;
-  }
-  .main-heading-scroll {
-    width: 1.5em;
-    height: 1.5em;
-    bottom: 82px;
-  }
-  .main-heading-scroll {
-    left: 46.5%;
   }
   .projects {
     padding-top: 30px;
