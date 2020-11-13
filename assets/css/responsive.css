@@ -36,7 +36,7 @@
     box-shadow: unset;
     color: #111 !important;
     margin: 20px 0;
-    font-size: 1em;
+    font-size: 16px;
     text-align: center;
   }
   .menu-btn {
@@ -48,7 +48,7 @@
     justify-content: center;
   }
   .menu-btn i {
-    font-size: 1.5em;
+    font-size: 24px;
     color: #c2509c;
   }
   .menu-btn i.active::before {
@@ -63,17 +63,17 @@
     padding: 0;
   }
   .main-heading-text--2 {
-    font-size: 4.5em;
+    font-size: 72px;
   }
   .projects {
     padding-top: 40px;
   }
   .projects h3 {
-    font-size: 2.5em;
+    font-size: 40px;
     margin-bottom: 40px;
   }
   .projects h3 i {
-    font-size: 1em;
+    font-size: 16px;
   }
   .projects-content {
     grid-template-columns: 1fr;
@@ -125,7 +125,7 @@
     box-shadow: unset;
     color: #333 !important;
     margin: 20px 0;
-    font-size: 1em;
+    font-size: 16px;
     text-align: center;
   }
   .menu-btn {
@@ -137,7 +137,7 @@
     justify-content: center;
   }
   .menu-btn i {
-    font-size: 1.5em;
+    font-size: 24px;
     color: #c2509c;
   }
   .menu-btn i.active::before {
@@ -173,18 +173,19 @@
     background-image: url(../image/banner1.jpg);
   }
   .main-heading-text--1,
-  .main-heading-text--3 {
-    font-size: 1.2em;
+  .main-heading-text--3,
+  .contact-content h5 {
+    font-size: 19.2px;
   }
   .main-heading-text--2 {
-    font-size: 2em;
+    font-size: 32px;
     margin-top: -6px;
   }
   .projects {
     padding-top: 30px;
   }
   .projects h3 {
-    font-size: 2em;
+    font-size: 32px;
     margin-bottom: 30px;
   }
   .projects-content {
@@ -192,17 +193,19 @@
   }
   .projects-content a {
     height: calc(100% - 2px);
+    width: 100%;
   }
   .projects-content p {
-    font-size: 2.5em;
+    font-size: 40px;
   }
   .footer {
     display: block;
     text-align: center;
     margin-bottom: 50px;
   }
-  .footer p {
-    font-size: 1em;
+  .footer p,
+  .contact-content p {
+    font-size: 16px;
   }
   .footer-icon {
     margin-top: 6px;
@@ -227,23 +230,36 @@
   .about-text {
     margin-top: 40px;
   }
-  .about-title {
-    font-size: 2em !important;
+  .about-title,
+  .contact-title {
+    font-size: 32px !important;
   }
   .about .about-title::before {
     bottom: -7px;
     width: 142px;
   }
-  .about .about-title::after {
+  .about .about-title::after,
+  .contact .contact-title::after {
     bottom: -17px;
     font-size: 18px;
   }
   .about .about-content .right .about-text {
-    font-size: 1.2em;
+    font-size: 19.2px;
   }
   .about .about-content .right p,
   .about .about-content .right a {
-    font-size: 1em;
+    font-size: 16px;
+  }
+  .contact-content {
+    flex-wrap: wrap;
+  }
+  .contact-adress,
+  .contact-email,
+  .contact-phone {
+    width: 100%;
+  }
+  .contact .contact-title::before {
+    width: 190px;
   }
 }
 @media (min-width: 375px) and (max-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -251,7 +267,7 @@
     width: 182px;
   }
   .main-heading-text---2 {
-    font-size: 2.5em;
+    font-size: 40px;
   }
 }
 @media (min-width: 375px) and (max-width: 667px) {
@@ -259,7 +275,7 @@
     width: 180px;
   }
   .main-heading-text--2 {
-    font-size: 2.5em;
+    font-size: 40px;
   }
 }
 @media (min-width: 360px) and (max-height: 640px) {

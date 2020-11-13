@@ -221,13 +221,13 @@ nav.sticky .navbar-brand p {
   color: #fff;
 }
 .main-heading-text--1 {
-  font-size: 1.8em;
+  font-size: 30px;
   font-weight: 500;
   opacity: 0;
   animation: slideFromLeftTo 1s forwards;
 }
 .main-heading-text--2 {
-  font-size: 6em;
+  font-size: 96px;
   font-weight: 700;
   background: linear-gradient(45deg, #c2509c, #9e6aff);
   margin-top: -18px;
@@ -238,7 +238,7 @@ nav.sticky .navbar-brand p {
   animation-delay: 0.3s;
 }
 .main-heading-text--3 {
-  font-size: 2em;
+  font-size: 32px;
   font-weight: 550;
   opacity: 0;
   animation: slideFromLeftTo 1s forwards;
@@ -271,7 +271,7 @@ nav.sticky .navbar-brand p {
 .projects h3 {
   font-family: "Barlow", sans-serif;
   font-weight: 750;
-  font-size: 3.5em;
+  font-size: 56px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
@@ -441,18 +441,20 @@ nav.sticky .navbar-brand p {
   height: 20px;
 }
 
-/* about me */
-.about {
+/* about me & contact me */
+.about,
+.contact {
   padding: 50px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.about .about-title {
+.about .about-title,
+.contact .contact-title {
   position: relative;
   font-family: "Barlow", sans-serif;
   font-weight: 750;
-  font-size: 3.5em;
+  font-size: 56px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 4px;
@@ -463,20 +465,21 @@ nav.sticky .navbar-brand p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about .about-title::before {
+.about .about-title::before,
+.contact .contact-title::before {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -8px;
   left: 50%;
   width: 180px;
   height: 1px;
   background-color: #111;
   transform: translateX(-50%);
 }
-.about .about-title::after {
-  content: "who i am";
+.about .about-title::after,
+.contact .contact-title::after {
   position: absolute;
-  bottom: -14px;
+  bottom: -20px;
   left: 50%;
   font-size: 22px;
   color: #333;
@@ -485,6 +488,9 @@ nav.sticky .navbar-brand p {
   transform: translateX(-50%);
   -webkit-text-fill-color: #333;
   text-transform: none;
+}
+.about .about-title::after {
+  content: "who i am";
 }
 .about .about-content {
   display: flex;
@@ -531,4 +537,40 @@ nav.sticky .navbar-brand p {
   border-radius: 6px;
   transition: all 0.3s ease;
   text-decoration: none;
+}
+.contact .contact-title::after {
+  content: "get in touch";
+}
+.contact .contact-title::before {
+  width: 224px;
+  bottom: -6px;
+}
+.contact-content {
+  display: flex;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.contact-icon {
+  width: 60px;
+  height: 60px;
+  margin: 20px 0 10px 0;
+}
+.contact-adress,
+.contact-email,
+.contact-phone {
+  width: calc(33% - 20px);
+  height: 220px;
+  margin: 20px 25px;
+  text-align: center;
+  background: linear-gradient(45deg, #c2509c, #9e6aff);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-content h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.contact-content p {
+  font-size: 20px;
+  margin: 0;
 }
