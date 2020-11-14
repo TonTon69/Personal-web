@@ -364,13 +364,15 @@ nav up li a.current {
   height: 20px;
 }
 
-/* about me & contact me */
+/* about me & contact me & my skills*/
 .about,
-.contact {
+.contact,
+.skills {
   padding: 50px;
 }
 .about .about-title,
-.contact .contact-title {
+.contact .contact-title,
+.skills .skills-title {
   position: relative;
   font-family: "Barlow", sans-serif;
   font-weight: 750;
@@ -386,7 +388,8 @@ nav up li a.current {
   -webkit-text-fill-color: transparent;
 }
 .about .about-title::before,
-.contact .contact-title::before {
+.contact .contact-title::before,
+.skills .skills-title::before {
   content: "";
   position: absolute;
   bottom: -8px;
@@ -397,7 +400,8 @@ nav up li a.current {
   transform: translateX(-50%);
 }
 .about .about-title::after,
-.contact .contact-title::after {
+.contact .contact-title::after,
+.skills .skills-title::after {
   position: absolute;
   bottom: -20px;
   left: 50%;
@@ -418,7 +422,8 @@ nav up li a.current {
   justify-content: center;
   flex-wrap: wrap;
 }
-.about .about-content .left {
+.about .about-content .left,
+.skills .skills-content .left {
   width: 45%;
   display: flex;
   justify-content: center;
@@ -429,7 +434,8 @@ nav up li a.current {
   object-fit: cover;
   border-radius: 6px;
 }
-.about .about-content .right {
+.about .about-content .right,
+.skills .skills-content .right {
   width: 55%;
 }
 .about .about-content .right .about-text {
@@ -463,7 +469,6 @@ nav up li a.current {
 }
 .contact .contact-title::before {
   width: 224px;
-  bottom: -6px;
 }
 .contact-content {
   display: flex;
@@ -487,7 +492,13 @@ nav up li a.current {
   text-align: center;
   background: linear-gradient(45deg, #c2509c, #9e6aff);
   border-radius: 6px;
+  transition: all 0.4s ease;
   cursor: pointer;
+}
+.contact-adress:hover,
+.contact-email:hover,
+.contact-phone:hover {
+  transform: scale(1.1);
 }
 .contact-content h5 {
   font-size: 22px;
@@ -497,7 +508,50 @@ nav up li a.current {
   font-size: 20px;
   margin: 0;
 }
-
+.skills .skills-title::before {
+  width: 216px;
+  bottom: -6px;
+}
+.skills .skills-title::after {
+  content: "what i know";
+}
+.skills-content {
+  padding: 0 25px;
+  display: flex;
+}
+.skills-content img {
+  width: 500px;
+  margin: 20px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.skills-content-web1 {
+  margin-top: 18px;
+}
+.skills-content-web1,
+.skills-content-web2 {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.skills-content-web1 div,
+.skills-content-web2 div {
+  margin-right: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #111;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.skills-content-web1 div:hover,
+.skills-content-web2 div:hover {
+  background: linear-gradient(45deg, #c2509c, #9e6aff);
+  color: #fff;
+  border: 1px solid #a963e4;
+}
 /* footer  */
 .footer {
   display: flex;
