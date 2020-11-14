@@ -39,6 +39,9 @@ nav.sticky .nav-link {
 nav.sticky .navbar-brand p {
   color: black !important;
 }
+nav up li a.current {
+  background-color: red;
+}
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -223,8 +226,6 @@ nav.sticky .navbar-brand p {
 .main-heading-text--1 {
   font-size: 30px;
   font-weight: 500;
-  opacity: 0;
-  animation: slideFromLeftTo 1s forwards;
 }
 .main-heading-text--2 {
   font-size: 96px;
@@ -233,27 +234,12 @@ nav.sticky .navbar-brand p {
   margin-top: -18px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  opacity: 0;
-  animation: slideFromLeftTo 1s forwards;
-  animation-delay: 0.3s;
 }
 .main-heading-text--3 {
   font-size: 32px;
   font-weight: 550;
-  opacity: 0;
-  animation: slideFromLeftTo 1s forwards;
-  animation-delay: 0.6s;
 }
-@-webkit-keyframes slideFromLeftTo {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+
 .main-heading-text--3 span {
   background: linear-gradient(45deg, #c2509c, #9e6aff);
   -webkit-background-clip: text;
@@ -264,9 +250,6 @@ nav.sticky .navbar-brand p {
 .projects {
   padding-top: 50px;
   padding-bottom: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 }
 .projects h3 {
   font-family: "Barlow", sans-serif;
@@ -315,38 +298,9 @@ nav.sticky .navbar-brand p {
   justify-content: center;
   overflow: hidden;
 }
-.project-blog {
-  opacity: 0;
-  animation: slideFromBottomUp 1s ease forwards;
-  animation-delay: 0.2s;
-}
-.project-shopee {
-  opacity: 0;
-  animation: slideFromBottomUp 1s ease forwards;
-  animation-delay: 0.4s;
-}
-.project-muzli {
-  opacity: 0;
-  animation: slideFromBottomUp 1s ease forwards;
-  animation-delay: 0.6s;
-}
-@-webkit-keyframes slideFromBottomUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-.projects-content a:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-.projects-content p {
-  margin-bottom: 0;
+.projects-content a p {
   position: absolute;
+  margin-bottom: 0;
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 2px black;
@@ -355,40 +309,9 @@ nav.sticky .navbar-brand p {
   z-index: 2;
 }
 
-/* footer  */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background-color: #f7f8fc;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.footer p {
-  margin: 0;
-  font-size: 18px;
-}
-.footer p span {
-  font-weight: 600;
-  color: #666;
-  cursor: pointer;
-}
-.footer p span:hover {
-  color: #c2509c;
-}
-.footer-icon {
-  font-size: 26px;
-}
-.footer-icon a {
-  margin-left: 16px;
-}
-.fab.fa-facebook {
-  color: #1196f5;
-}
-.fab.fa-github {
-  color: #333;
+.projects-content a:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* srcoll to top */
@@ -445,9 +368,6 @@ nav.sticky .navbar-brand p {
 .about,
 .contact {
   padding: 50px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
 }
 .about .about-title,
 .contact .contact-title {
@@ -554,6 +474,9 @@ nav.sticky .navbar-brand p {
   width: 60px;
   height: 60px;
   margin: 20px 0 10px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .contact-adress,
 .contact-email,
@@ -573,4 +496,40 @@ nav.sticky .navbar-brand p {
 .contact-content p {
   font-size: 20px;
   margin: 0;
+}
+
+/* footer  */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f7f8fc;
+}
+.footer p {
+  margin: 0;
+  font-size: 18px;
+}
+.footer p span {
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+}
+.footer p span:hover {
+  color: #c2509c;
+}
+.footer-icon {
+  font-size: 26px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.footer-icon a {
+  margin-left: 16px;
+}
+.fab.fa-facebook {
+  color: #1196f5;
+}
+.fab.fa-github {
+  color: #333;
 }
