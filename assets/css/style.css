@@ -39,9 +39,7 @@ nav.sticky .nav-link {
 nav.sticky .navbar-brand p {
   color: black !important;
 }
-nav up li a.current {
-  background-color: red;
-}
+
 .navbar-brand {
   display: flex;
   align-items: center;
