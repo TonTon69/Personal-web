@@ -18,6 +18,7 @@ html {
   padding: 10px 50px;
   z-index: 999;
   background-color: transparent !important;
+  -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   justify-content: space-between;
   -webkit-user-select: none;
@@ -83,6 +84,7 @@ nav.sticky .navbar-brand p {
   left: 0;
   bottom: -3px;
   background-color: #c2509c;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .nav-link:hover {
@@ -148,6 +150,7 @@ nav.sticky .navbar-brand p {
   box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   visibility: hidden;
   opacity: 0;
@@ -284,6 +287,7 @@ nav.sticky .navbar-brand p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .projects-content a {
@@ -326,6 +330,7 @@ nav.sticky .navbar-brand p {
   background: linear-gradient(-45deg, #c2509c, #9e6aff);
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   cursor: pointer;
   z-index: 10;
@@ -337,7 +342,6 @@ nav.sticky .navbar-brand p {
 }
 .to-top i {
   color: #fff;
-  transition: all 0.2s ease;
 }
 
 /* menu tablet & moblie */
@@ -459,6 +463,7 @@ nav.sticky .navbar-brand p {
   padding: 8px 30px;
   margin-top: 20px;
   border-radius: 6px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -471,6 +476,7 @@ nav.sticky .navbar-brand p {
 .contact-content {
   display: flex;
   color: #fff;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .contact-icon {
@@ -490,6 +496,7 @@ nav.sticky .navbar-brand p {
   text-align: center;
   background: linear-gradient(45deg, #c2509c, #9e6aff);
   border-radius: 6px;
+  -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   cursor: pointer;
 }
